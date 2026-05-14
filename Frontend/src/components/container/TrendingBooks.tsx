@@ -42,7 +42,7 @@ const WHY_READ = [
   },
 ];
 
-export default function TrendingBooks() {
+const TrendingBooks = () => {
   const dispatch = useAppDispatch();
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -397,4 +397,10 @@ export default function TrendingBooks() {
       </Box>
     </>
   );
-}
+};
+
+export default (
+  <React.Suspense>
+    <TrendingBooks />
+  </React.Suspense>
+);

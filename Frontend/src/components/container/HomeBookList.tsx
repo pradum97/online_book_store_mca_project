@@ -61,7 +61,7 @@ interface IBookList {
   category_name: string;
 }
 
-export default function HomeBookList() {
+const HomeBookList = () => {
   const dispatch = useAppDispatch();
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -348,4 +348,10 @@ export default function HomeBookList() {
       </Box>
     </>
   );
-}
+};
+
+export default (
+  <React.Suspense>
+    <HomeBookList />
+  </React.Suspense>
+);

@@ -13,6 +13,7 @@ pool.on("error", (err) => {
 });
 async function query(text, params = [], retries = 5) {
   try {
+    console.log("DATABASE_URL:", process.env.DATABASE_URL);
     const res = await pool.query(text, params);
     return res;
   } catch (err) {

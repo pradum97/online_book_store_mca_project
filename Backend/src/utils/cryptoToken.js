@@ -1,7 +1,9 @@
 const crypto = require("crypto");
 
 const algorithm = "aes-256-cbc";
-const secret = process.env.TOKEN_SECRET;
+const secret =
+  process.env.TOKEN_SECRET ||
+  "66ade5a0f98c4055977ed9c101c357598418a0b799a7f566b07ab286705e738cd28808122a51e8c5c5558a71b20b7763d13310431d8f700ed8cebe80f01935cd";
 
 const key = crypto.createHash("sha256").update(secret).digest();
 const iv = Buffer.alloc(16, 0);

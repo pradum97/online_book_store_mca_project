@@ -12,7 +12,7 @@ import {
   Typography,
 } from "@mui/material";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { IRole } from "@app/auth/lib/session";
 import ClearIcon from "@mui/icons-material/Clear";
 import SearchIcon from "@mui/icons-material/Search";
@@ -59,7 +59,7 @@ function HighlightText({ text, query }: { text: string; query: string }) {
   );
 }
 
-export default function SearchBar({ role = "GUEST" }: Props) {
+const SearchBar = ({ role = "GUEST" }: Props) => {
   if (role === "ADMIN" || role === "SELLER") return null;
 
   const router = useRouter();
@@ -275,4 +275,10 @@ export default function SearchBar({ role = "GUEST" }: Props) {
       )}
     </Box>
   );
-}
+};
+
+export default (
+  <React.Suspense>
+    <SearchBar />
+  </React.Suspense>
+);

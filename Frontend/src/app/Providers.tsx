@@ -23,7 +23,7 @@ import { IRole } from "./auth/lib/session";
 import AccessDenied from "@/components/AccessDenied";
 import PermissionLoading from "@/components/PermissionLoading";
 
-export default function Providers({ children }: { children: React.ReactNode }) {
+function ProvidersContent({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -88,5 +88,12 @@ export default function Providers({ children }: { children: React.ReactNode }) {
         <ToastProvider />
       </ThemeProvider>
     </ReduxProvider>
+  );
+}
+export default function Providers({ children }: { children: React.ReactNode }) {
+  return (
+    <React.Suspense fallback={null}>
+      <ProvidersContent>{children}</ProvidersContent>
+    </React.Suspense>
   );
 }
