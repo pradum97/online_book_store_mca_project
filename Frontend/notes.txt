@@ -1,0 +1,2 @@
+GetWebPages_prc
+CheckUserPagePermission_prc

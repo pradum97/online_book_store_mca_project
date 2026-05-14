@@ -1,0 +1,121 @@
+html,
+body {
+  max-width: 100vw !important;
+  padding: 0px;
+  background-color: rgb(238, 240, 248) !important;
+  flex-grow: 1 !important;
+}
+
+/* Forn React Toastfy  */
+.Toastify__toast {
+  min-height: 36px !important;
+  padding: 6px 12px !important;
+  font-size: 14px !important;
+  border-radius: 8px !important;
+}
+
+.Toastify__toast-body {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.Toastify__toast-icon {
+  margin-right: 3px !important;
+}
+
+.header-center {
+  text-align: center;
+}
+
+.row-white {
+  background-color: white !important;
+}
+
+.row-active {
+  background-color: #d4edda !important;
+}
+
+.row-inactive {
+  background-color: #d7d8db !important;
+}
+
+.row-suspended {
+  background-color: #f0a8ae !important;
+}
+
+.row-pending {
+  background-color: #fff3cd !important;
+}
+
+.row-active-linear {
+  background-color: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.custom-line-height {
+  line-height: 1.3 !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+.super-admin-linear {
+  background: linear-gradient(135deg, #e0feea, #b6fac5) !important;
+  color: #0f172a;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.15);
+}
+
+.MuiAutocomplete-listbox li:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.ag-theme-quartz .ag-row.ag-row-selected .ag-cell {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+.custom-audio-player {
+  font-size: 1rem;
+  color: #fff;
+}
+.custom-audio-player .rhap_time {
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.custom-audio-player .rhap_progress-bar {
+  height: 8px !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.custom-audio-player .rhap_progress-filled {
+  background-color: #f44336 !important;
+}
+.custom-audio-player .rhap_controls-section {
+  gap: 12px;
+}
+
+.header-center .ag-header-cell-label {
+  justify-content: center !important;
+}
+
+.header-center .ag-header-cell-text {
+  text-align: center;
+  width: 100%;
+}
+
+/* CELL CONTENT CENTER */
+.cell-center {
+  text-align: center !important;
+  justify-content: center !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.header-center .ag-header-cell-label {
+  justify-content: center !important;
+}
+
+.ag-header-cell {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}

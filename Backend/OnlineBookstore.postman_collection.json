@@ -1,0 +1,2686 @@
+{
+  "info": {
+    "name": "Online Bookstore APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST /api/v1/auth/otp/send",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/auth/otp/send",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "otp",
+            "send"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/auth/otp/resend",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/auth/otp/resend",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "otp",
+            "resend"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/auth/otp/verify",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/auth/otp/verify",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "otp",
+            "verify"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/auth/signup",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/auth/signup",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "signup"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/auth/check-availability",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/auth/check-availability",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "check-availability"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/auth/login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "login"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/auth/refresh-token",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/auth/refresh-token",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "refresh-token"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/auth/logout",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/auth/logout",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "logout"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/auth/me",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/auth/me",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "me"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/auth/sessions",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/auth/sessions",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "sessions"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE /api/v1/auth/sessions/:sessionId",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/auth/sessions/:sessionId",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "sessions",
+            ":sessionId"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/auth/password/reset",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/auth/password/reset",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "password",
+            "reset"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/auth/generate-bcrypt-password",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/auth/generate-bcrypt-password",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "generate-bcrypt-password"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/admin/user/users",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user/users",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user",
+            "users"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/admin/user/users/:id",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user/users/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user",
+            "users",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/admin/user/users/:id",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user/users/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user",
+            "users",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/admin/user/users/:id/status",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user/users/:id/status",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user",
+            "users",
+            ":id",
+            "status"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/admin/user/CheckUserStatus",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user/CheckUserStatus",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user",
+            "CheckUserStatus"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PUT /api/v1/admin/user/profile",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user/profile",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user",
+            "profile"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/admin/user/my-addresses",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user/my-addresses",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user",
+            "my-addresses"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/admin/user/add-address",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user/add-address",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user",
+            "add-address"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PUT /api/v1/admin/user/update-address/:id",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user/update-address/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user",
+            "update-address",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PUT /api/v1/admin/user/set-default-address/:id",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user/set-default-address/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user",
+            "set-default-address",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE /api/v1/admin/user/delete-address/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user/delete-address/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user",
+            "delete-address",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/admin/user-type/user-types",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user-type/user-types",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user-type",
+            "user-types"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/admin/user-type/user-types",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user-type/user-types",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user-type",
+            "user-types"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/admin/user-type/user-types/:id",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user-type/user-types/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user-type",
+            "user-types",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE /api/v1/admin/user-type/user-types/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/user-type/user-types/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "user-type",
+            "user-types",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/admin/web/pages",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/web/pages",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "web",
+            "pages"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/admin/web/pages",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/web/pages",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "web",
+            "pages"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/admin/web/page-permissions",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/web/page-permissions",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "web",
+            "page-permissions"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/admin/web/page-permissions",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/web/page-permissions",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "web",
+            "page-permissions"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/admin/web/page-permissions/:id",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/web/page-permissions/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "web",
+            "page-permissions",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE /api/v1/admin/web/page-permissions/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/admin/web/page-permissions/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "admin",
+            "web",
+            "page-permissions",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/book/categories",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/categories",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "categories"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/book/categories",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/categories",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "categories"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/book/categories/:id",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/categories/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "categories",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/book/categories/:id",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/categories/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "categories",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE /api/v1/book/categories/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/categories/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "categories",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/book/books",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "books"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/book/books",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "books"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/book/books/autocomplete",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/books/autocomplete",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "books",
+            "autocomplete"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/book/books/:id",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/books/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "books",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE /api/v1/book/books/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/books/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "books",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/book/books/:id",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/books/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "books",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/book/seller-books",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/seller-books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "seller-books"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/book/uoms",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/uoms",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "uoms"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/book/books/:id/edit-data",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/books/:id/edit-data",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "books",
+            ":id",
+            "edit-data"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/book/books/:book_id/uoms",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/books/:book_id/uoms",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "books",
+            ":book_id",
+            "uoms"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/seller/apply-seller",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/seller/apply-seller",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "seller",
+            "apply-seller"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/seller/request-status",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/seller/request-status",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "seller",
+            "request-status"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/seller/sellers",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/seller/sellers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "seller",
+            "sellers"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/seller/sellers/:id",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/seller/sellers/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "seller",
+            "sellers",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE /api/v1/seller/sellers/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/seller/sellers/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "seller",
+            "sellers",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/seller/sellers/:id/status",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/seller/sellers/:id/status",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "seller",
+            "sellers",
+            ":id",
+            "status"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/book/books/:book_id/images",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/books/:book_id/images",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "books",
+            ":book_id",
+            "images"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/book/books/:bookId/images",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/books/:bookId/images",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "books",
+            ":bookId",
+            "images"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE /api/v1/book/books/images/:image_id",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/books/images/:image_id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "books",
+            "images",
+            ":image_id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/book/stock",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/stock",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "stock"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/book/stock",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/stock",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "stock"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/book/stock/:stock_id",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/stock/:stock_id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "stock",
+            ":stock_id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE /api/v1/book/stock/:stock_id",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/stock/:stock_id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "stock",
+            ":stock_id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/book/stock/history",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/book/stock/history",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "book",
+            "stock",
+            "history"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/cart",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/cart",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "cart"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/cart/items",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/cart/items",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "cart",
+            "items"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/cart/items/:cart_item_id",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/cart/items/:cart_item_id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "cart",
+            "items",
+            ":cart_item_id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE /api/v1/cart/items/:cart_item_id",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/cart/items/:cart_item_id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "cart",
+            "items",
+            ":cart_item_id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE /api/v1/cart/clear",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/cart/clear",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "cart",
+            "clear"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/cart/billing",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/cart/billing",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "cart",
+            "billing"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/order/orders",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/order/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "order",
+            "orders"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/order/orders",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/order/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "order",
+            "orders"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/order/orders/my-orders",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/order/orders/my-orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "order",
+            "orders",
+            "my-orders"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/order/orders/:value",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/order/orders/:value",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "order",
+            "orders",
+            ":value"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/order/orders/:order_id/items",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/order/orders/:order_id/items",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "order",
+            "orders",
+            ":order_id",
+            "items"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/order/orders/:order_id/status-history",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/order/orders/:order_id/status-history",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "order",
+            "orders",
+            ":order_id",
+            "status-history"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/order/orders/:order_item_id/status",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/order/orders/:order_item_id/status",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "order",
+            "orders",
+            ":order_item_id",
+            "status"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/order/orders/:orderId/items/:itemId/return",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/order/orders/:orderId/items/:itemId/return",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "order",
+            "orders",
+            ":orderId",
+            "items",
+            ":itemId",
+            "return"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/order/orders/:orderId/items/:itemId/return",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/order/orders/:orderId/items/:itemId/return",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "order",
+            "orders",
+            ":orderId",
+            "items",
+            ":itemId",
+            "return"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/order/orders/:orderId/items/:orderItemId/cancel",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/order/orders/:orderId/items/:orderItemId/cancel",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "order",
+            "orders",
+            ":orderId",
+            "items",
+            ":orderItemId",
+            "cancel"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/seller-order/orders",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/seller-order/orders",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "seller-order",
+            "orders"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/seller-order/orders/returns",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/seller-order/orders/returns",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "seller-order",
+            "orders",
+            "returns"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/seller-order/orders/returns/stats",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/seller-order/orders/returns/stats",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "seller-order",
+            "orders",
+            "returns",
+            "stats"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/seller-order/orders/returns/:returnId/action",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/seller-order/orders/returns/:returnId/action",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "seller-order",
+            "orders",
+            "returns",
+            ":returnId",
+            "action"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/seller-order/orders/:orderId",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/seller-order/orders/:orderId",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "seller-order",
+            "orders",
+            ":orderId"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/seller-order/orders/:orderId/items",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/seller-order/orders/:orderId/items",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "seller-order",
+            "orders",
+            ":orderId",
+            "items"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/seller-order/orders/item/:order_item_id/status",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/seller-order/orders/item/:order_item_id/status",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "seller-order",
+            "orders",
+            "item",
+            ":order_item_id",
+            "status"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/payment/payment-modes",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/payment/payment-modes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "payment",
+            "payment-modes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/payment/payment-modes",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/payment/payment-modes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "payment",
+            "payment-modes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/payment/payment-modes/:payment_mode_id",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/payment/payment-modes/:payment_mode_id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "payment",
+            "payment-modes",
+            ":payment_mode_id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/payment/payments/initiate",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/payment/payments/initiate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "payment",
+            "payments",
+            "initiate"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/payment/payments/verify",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/payment/payments/verify",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "payment",
+            "payments",
+            "verify"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/payment/payments/retry",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/payment/payments/retry",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "payment",
+            "payments",
+            "retry"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/payment/payments/:paymentId",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/payment/payments/:paymentId",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "payment",
+            "payments",
+            ":paymentId"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/payment/payments/order/:orderId",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/payment/payments/order/:orderId",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "payment",
+            "payments",
+            "order",
+            ":orderId"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/reviews",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/reviews",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "reviews"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/reviews/book/:bookId",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/reviews/book/:bookId",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "reviews",
+            "book",
+            ":bookId"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE /api/v1/reviews/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/reviews/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "reviews",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/receipt/:orderId/receipt",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/receipt/:orderId/receipt",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "receipt",
+            ":orderId",
+            "receipt"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /api/v1/receipt/:orderId/receipt/download",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5055/api/v1/receipt/:orderId/receipt/download",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5055",
+          "path": [
+            "api",
+            "v1",
+            "receipt",
+            ":orderId",
+            "receipt",
+            "download"
+          ]
+        }
+      }
+    }
+  ]
+}

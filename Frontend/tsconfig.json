@@ -1,0 +1,82 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@app/*": [
+        "./src/app/*"
+      ],
+      "@config/*": [
+        "./src/config/*"
+      ],
+      "@lib/*": [
+        "./src/components/lib/*"
+      ],
+      "@container/*": [
+        "./src/components/container/*"
+      ],
+      "@utils/*": [
+        "./src/components/utils/*"
+      ],
+      "@modules/*": [
+        "./src/components/modules/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@appearance/*": [
+        "./src/appearance/*"
+      ],
+      "@registry/*": [
+        "./src/registry/*"
+      ],
+      "@AxoisClient/*": [
+        "./src/webEndPoints/clients/*"
+      ],
+      "@redux/*": [
+        "./src/redux/*"
+      ],
+      "@webEndPoints/*": [
+        "./src/webEndPoints/*"
+      ],
+      "@interface/*": [
+        "./src/interface/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "next-env.d.ts",
+    "types",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
