@@ -59,7 +59,7 @@ function HighlightText({ text, query }: { text: string; query: string }) {
   );
 }
 
-const SearchBar = ({ role = "GUEST" }: Props) => {
+const SearchBarContent = ({ role = "GUEST" }: Props) => {
   if (role === "ADMIN" || role === "SELLER") return null;
 
   const router = useRouter();
@@ -277,8 +277,12 @@ const SearchBar = ({ role = "GUEST" }: Props) => {
   );
 };
 
-export default (
-  <React.Suspense>
-    <SearchBar />
-  </React.Suspense>
-);
+function SearchBar(props: Props) {
+  return (
+    <React.Suspense fallback={null}>
+      <SearchBarContent {...props} />
+    </React.Suspense>
+  );
+}
+
+export default React.memo(SearchBar);

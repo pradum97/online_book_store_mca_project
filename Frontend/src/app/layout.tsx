@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "react-toastify/dist/ReactToastify.css";
-import Providers from "@/app/Providers";
 import NextAppDirEmotionCacheProvider from "@registry/EmotionRegistry";
 import "react-toastify/dist/ReactToastify.css";
 import "@fontsource/inter";
 
 import { Inter } from "next/font/google";
+import Providers from "./Providers";
 
 export const metadata: Metadata = {
   title: "BookStore - Buy Books Online",

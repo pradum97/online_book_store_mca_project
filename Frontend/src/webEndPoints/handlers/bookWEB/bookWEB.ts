@@ -1,5 +1,5 @@
 import AxiosClient from "@/webEndPoints/clients/axios-client";
-import { BookFormValues } from "@modules/book/Addbookpage";
+import { BookFormValues } from "@modules/book/AddBookPage";
 const commonPath = "/api/v1/book";
 
 export const GetSellerBookListEP = async () => {

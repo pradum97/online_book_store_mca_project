@@ -63,7 +63,7 @@ const pwaConfig = withPWA({
   register: true,
   skipWaiting: true,
   //disable: isDev,
-  disable: false,
+  disable: true,
   buildExcludes: [
     ({ asset }: { asset: string; size: number }) =>
       /middleware-manifest\.json$/.test(asset),

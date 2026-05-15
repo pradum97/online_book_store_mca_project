@@ -319,7 +319,7 @@ const DescriptionCellRenderer = (
   );
 };
 
-export default function BookList() {
+const BookListPage = () => {
   const [loadingBookId, setLoadingBookId] = useState<string | null>(null);
   const [previewBook, setPreviewBook] = useState<IGetSellerBookListEP | null>(
     null,
@@ -733,4 +733,6 @@ export default function BookList() {
       />
     </>
   );
-}
+};
+
+export default BookListPage;

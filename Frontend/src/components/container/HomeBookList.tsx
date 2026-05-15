@@ -61,7 +61,7 @@ interface IBookList {
   category_name: string;
 }
 
-const HomeBookList = () => {
+const HomeBookListContent = () => {
   const dispatch = useAppDispatch();
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -350,8 +350,12 @@ const HomeBookList = () => {
   );
 };
 
-export default (
-  <React.Suspense>
-    <HomeBookList />
-  </React.Suspense>
-);
+function HomeBookList() {
+  return (
+    <React.Suspense fallback={null}>
+      <HomeBookListContent />
+    </React.Suspense>
+  );
+}
+
+export default HomeBookList;

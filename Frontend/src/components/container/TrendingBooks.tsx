@@ -42,7 +42,7 @@ const WHY_READ = [
   },
 ];
 
-const TrendingBooks = () => {
+const TrendingBooksWrapper = () => {
   const dispatch = useAppDispatch();
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -399,8 +399,12 @@ const TrendingBooks = () => {
   );
 };
 
-export default (
-  <React.Suspense>
-    <TrendingBooks />
-  </React.Suspense>
-);
+const TrendingBook = () => {
+  return (
+    <React.Suspense fallback={null}>
+      <TrendingBooksWrapper />
+    </React.Suspense>
+  );
+};
+
+export default TrendingBook;

@@ -9,7 +9,7 @@ import {
   DialogTitle,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import AddBookPage from "./Addbookpage";
+import AddBookPage from "./AddBookPage";
 import { IGetSellerBookListEP } from "@webEndPoints/handlers/bookWEB/IbookWEB";
 
 interface AddBookModalProps {

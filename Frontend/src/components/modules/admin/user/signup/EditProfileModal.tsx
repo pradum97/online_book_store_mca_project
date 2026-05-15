@@ -137,7 +137,6 @@ export default function EditProfileModal({
         },
       }}
     >
-      {/* ── Header (same as AddBookModal) ── */}
       <DialogTitle
         sx={{
           display: "flex",

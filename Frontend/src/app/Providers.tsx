@@ -23,7 +23,7 @@ import { IRole } from "./auth/lib/session";
 import AccessDenied from "@/components/AccessDenied";
 import PermissionLoading from "@/components/PermissionLoading";
 
-function ProvidersContent({ children }: { children: React.ReactNode }) {
+export function ProvidersContent({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const router = useRouter();
