@@ -1,238 +1,120 @@
 # 📚 Online Bookstore Management System
 
-A secure and scalable **Online Bookstore Management System** developed using **Next.js, Node.js, Express.js, PostgreSQL, and JWT Authentication**.  
-This project focuses on backend architecture, REST API development, role-based authentication, inventory management, and secure database integration.
+A secure and scalable **Online Bookstore Management System** built using **Next.js, Node.js, Express.js, PostgreSQL, and JWT Authentication**.
 
 ---
 
 # 🌐 Live Demo
 
-## 🚀 Project URLs
-
-### Primary Demo URL
+### 🚀 Primary URL
 
 🔗 https://mca-online-book-store-psi.vercel.app
 
-### Backup Demo URL
+### 🚀 Backup URL
 
 🔗 https://online-book-store.up.railway.app
 
-> ⚠ If the first URL is not working due to server sleep or deployment issue, please try the second URL.
+> ⚠ If one URL is not working, please try the other URL.
 
 ---
 
 # 🔑 Demo Login Credentials
 
-## 👨‍💼 Admin Login
-
-| Field    | Value       |
-| -------- | ----------- |
-| Username | `admin`     |
-| Password | `Admin@123` |
-
----
-
-## 🛍 Seller Login
-
-| Field    | Value        |
-| -------- | ------------ |
-| Username | `pradum`     |
-| Password | `Pradum@123` |
-
----
-
-## 👤 Customer Login
-
-| Field    | Value          |
-| -------- | -------------- |
-| Username | `customer`     |
-| Password | `Customer@123` |
+| Role     | Username   | Password       |
+| -------- | ---------- | -------------- |
+| Admin    | `admin`    | `Admin@123`    |
+| Seller   | `pradum`   | `Pradum@123`   |
+| Customer | `customer` | `Customer@123` |
 
 ---
 
 # 🚀 Features
 
-- 🔐 JWT-based Authentication & Authorization
-- 👥 Role-Based Access Control (Admin, Seller, Customer)
-- 📖 Book & Category Management
-- 🛒 Cart & Order Processing
-- 📦 Inventory & Stock Management
-- 🔄 REST API Integration
-- 🗄 PostgreSQL Database Management
-- 🔒 Secure Password Encryption using Bcrypt
-- ⚡ Scalable Backend Architecture
+- JWT Authentication & Authorization
+- Role-Based Access Control
+- Book & Category Management
+- Cart & Order Management
+- Inventory & Stock Management
+- REST API Integration
+- PostgreSQL Database
+- Secure Password Encryption
+- Responsive UI
 
 ---
 
-# 🛠 Technologies Used
+# 🛠 Tech Stack
 
-| Technology | Purpose                          |
-| ---------- | -------------------------------- |
-| Next.js    | Frontend Development             |
-| Node.js    | Backend Runtime                  |
-| Express.js | REST API Development             |
-| PostgreSQL | Database Management              |
-| JWT        | Authentication & Security        |
-| Bcrypt     | Password Encryption              |
-| REST APIs  | Frontend & Backend Communication |
-
----
-
-# 🧩 System Modules
-
-- Authentication Module
-- User Management Module
-- Book Management Module
-- Inventory Management Module
-- Cart Management Module
-- Order Management Module
-- Role-Based Access Control Module
-- Admin Dashboard Module
+| Technology | Usage             |
+| ---------- | ----------------- |
+| Next.js    | Frontend          |
+| Node.js    | Backend           |
+| Express.js | REST APIs         |
+| PostgreSQL | Database          |
+| JWT        | Authentication    |
+| Bcrypt     | Password Security |
 
 ---
 
-# 🏗 System Architecture
+# 📌 Modules
 
-The application follows a modular client-server architecture:
-
-- **Frontend Layer:** Next.js
-- **Backend Layer:** Node.js + Express.js
-- **Authentication:** JWT Middleware
-- **Database:** PostgreSQL
-- **API Communication:** REST APIs
+- Authentication
+- User Management
+- Book Management
+- Inventory Management
+- Cart & Orders
+- Admin Dashboard
 
 ---
 
-# 🔐 Authentication & Security
+# 🔐 Security Features
 
 - JWT Token Authentication
-- Protected API Routes
+- Protected Routes
 - Role-Based Authorization
-- Password Encryption using Bcrypt
+- Password Encryption
 - Middleware Validation
-- Secure Session Handling
 
 ---
 
-# 📊 Database Design
+# 👨‍💼 Functionalities
 
-Main Database Tables:
+### Admin
 
-- Users
-- Sellers
-- Categories
-- Books
-- Inventory
-- Cart
-- Cart Items
-- Orders
-- Order Items
-- Payments
+- Manage Users & Sellers
+- Manage Books & Categories
+- Manage Inventory & Orders
 
----
+### Seller
 
-# 📌 Functionalities
+- Add & Manage Books
+- Update Inventory
+- Manage Orders
 
-## 👨‍💼 Admin
+### Customer
 
-- Manage users and sellers
-- Manage books and categories
-- Manage inventory and orders
-- Monitor system activities
-
----
-
-## 🛍 Seller
-
-- Add and manage books
-- Update inventory
-- Manage order status
-
----
-
-## 👤 Customer
-
-- Browse books
-- Add books to cart
-- Place orders
-- Manage account
-
----
-
-## 🌐 Guest User
-
-- View books and categories
-
----
-
-# 🧪 Testing
-
-The system was tested for:
-
-- User Authentication
-- API Communication
-- Database Operations
-- Inventory Handling
-- Order Processing
-- Role-Based Access Control
-- System Performance
-
----
-
-# 📈 Advantages
-
-- Secure and centralized management
-- Improved inventory tracking
-- Scalable architecture
-- Better operational efficiency
-- Structured database management
-- Secure API communication
-
----
-
-# ⚠ Limitations
-
-- Requires stable internet connection
-- Payment gateway integration limited
-- Advanced analytics not implemented
-- High traffic may affect performance
+- Browse Books
+- Add to Cart
+- Place Orders
 
 ---
 
 # 🔮 Future Enhancements
 
-- AI-based Book Recommendation System
-- Online Payment Gateway Integration
-- Real-Time Notifications
-- Email Alerts
-- Mobile Application Support
-- Advanced Analytics Dashboard
-- Cloud Deployment
-
----
-
-# 📷 Project Diagrams
-
-Included in the project documentation:
-
-- DFD Diagram
-- Use Case Diagram
-- UML Class Diagram
-- Sequence Diagram
-- Activity Diagram
-- ER Diagram
-- System Architecture Diagram
+- Payment Gateway Integration
+- AI Book Recommendation
+- Email Notifications
+- Mobile App Support
+- Analytics Dashboard
 
 ---
 
 # 👨‍💻 Author
 
 **PRADUM KUMAR**  
-Master of Computer Applications (MCA)  
-Chandigarh University
+MCA | Chandigarh University
 
 ---
 
 # 📄 License
 
-This project is developed for academic and educational purposes.
+Academic & Educational Project
