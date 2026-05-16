@@ -16,7 +16,7 @@ import {
   Skeleton,
   Stack,
 } from "@mui/material";
-import PageContainer from "@container/Pagecontainer";
+import PageContainer from "@container/PageContainer";
 import {
   GetSellerByIdEP,
   UpdateSellerStatusEP,
@@ -424,7 +424,7 @@ export default function SellerDetailPage() {
 
   const fullName = seller ? `${seller.first_name} ${seller.last_name}` : "";
   const avColor = av(fullName || "A");
-  const docCount = DOC_KEYS.filter(({ key }) => docs[key]?.uploaded).length;
+  const docCount = DOC_KEYS?.filter(({ key }) => docs[key]?.uploaded).length;
   const totalDocs = DOC_KEYS.length;
 
   const openConfirm = (action: DialogAction) =>

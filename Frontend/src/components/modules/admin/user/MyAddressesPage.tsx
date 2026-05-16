@@ -37,7 +37,7 @@ import {
   IAddressPayload,
   IGetMyAddressesEP,
 } from "@webEndPoints/handlers/userWEB/IuserWEB";
-import PageContainer from "@container/Pagecontainer";
+import PageContainer from "@container/PageContainer";
 
 type PanelMode = "list" | "add" | "edit";
 

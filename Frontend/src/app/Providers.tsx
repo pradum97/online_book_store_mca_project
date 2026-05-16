@@ -7,7 +7,7 @@ import LocalizationRegistry from "@registry/LocalizationRegistry";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Provider as ReduxProvider } from "react-redux";
 import { store } from "@redux/store/store";
-import MenuLoader from "@/providers/MenuLoader";
+// import MenuLoader from "@/providers/MenuLoader";
 import { ConfirmationDialogProvider } from "@/providers/ConfirmationDialogProvider";
 
 import dynamic from "next/dynamic";
@@ -66,7 +66,7 @@ export function ProvidersContent({ children }: { children: React.ReactNode }) {
         <LocalizationRegistry>
           <QueryClientProvider client={queryClient}>
             <GlobalInit />
-            <MenuLoader />
+            {/* <MenuLoader /> */}
             {!DrawerHideLayout.includes(pathname) && <Navbar />}
 
             <ConfirmationDialogProvider>

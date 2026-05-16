@@ -13,7 +13,7 @@ import { AgGridReact } from "ag-grid-react";
 import { ColDef, ICellRendererParams } from "ag-grid-community";
 import { useRouter } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
-import PageContainer from "@container/Pagecontainer";
+import PageContainer from "@container/PageContainer";
 import { agGridTheme } from "@appearance/agGridThemes";
 import {
   GetAllSellersEP,

@@ -138,7 +138,7 @@ const HomeBookListContent = () => {
     let list = [...bookList];
 
     if (filters.categories.length > 0) {
-      list = list.filter((b) =>
+      list = list?.filter((b) =>
         filters.categories.some(
           (cId: string) =>
             categoriesList.find(
@@ -150,17 +150,17 @@ const HomeBookListContent = () => {
     }
 
     if (filters.authors.length > 0) {
-      list = list.filter((b) => filters.authors.includes(b.author));
+      list = list?.filter((b) => filters.authors.includes(b.author));
     }
 
-    list = list.filter(
+    list = list?.filter(
       (b) =>
         b.price >= filters.priceRange[0] && b.price <= filters.priceRange[1],
     );
 
     // Rating filter
     if (filters.minRating > 0) {
-      list = list.filter((b) => b.rating >= filters.minRating);
+      list = list?.filter((b) => b.rating >= filters.minRating);
     }
 
     // Sort

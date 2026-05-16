@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import { AgGridReact } from "ag-grid-react";
 import type { ColDef, ICellRendererParams } from "ag-grid-community";
-import PageContainer from "@container/Pagecontainer";
+import PageContainer from "@container/PageContainer";
 import { IGetAllUsersEP } from "@webEndPoints/handlers/userWEB/IuserWEB";
 import {
   GetAllUsersEP,
@@ -134,7 +134,7 @@ const ActionCellRenderer = (params: ActionCellRendererProps) => {
     return <CircularProgress size={16} sx={{ color: "#6366f1", ml: "30px" }} />;
   }
 
-  const options = ALL_STATUSES.filter((s) => s !== status);
+  const options = ALL_STATUSES?.filter((s) => s !== status);
 
   return (
     <>
@@ -472,9 +472,9 @@ export default function UserList() {
   const gridStyle = useMemo(() => ({ height: "100%", width: "100%" }), []);
 
   const totalUsers = users.length;
-  const activeUsers = users.filter((u) => u.status === "ACTIVE").length;
-  const suspendedUsers = users.filter((u) => u.status === "SUSPENDED").length;
-  const blockedUsers = users.filter((u) => u.status === "BLOCKED").length;
+  const activeUsers = users?.filter((u) => u.status === "ACTIVE").length;
+  const suspendedUsers = users?.filter((u) => u.status === "SUSPENDED").length;
+  const blockedUsers = users?.filter((u) => u.status === "BLOCKED").length;
 
   return (
     <PageContainer

@@ -1,7 +1,52 @@
 # 📚 Online Bookstore Management System
 
 A secure and scalable **Online Bookstore Management System** developed using **Next.js, Node.js, Express.js, PostgreSQL, and JWT Authentication**.  
-The project focuses on backend architecture, REST API development, role-based authentication, inventory management, and secure database integration.
+This project focuses on backend architecture, REST API development, role-based authentication, inventory management, and secure database integration.
+
+---
+
+# 🌐 Live Demo
+
+## 🚀 Project URLs
+
+### Primary Demo URL
+
+🔗 https://mca-online-book-store-psi.vercel.app
+
+### Backup Demo URL
+
+🔗 https://online-book-store.up.railway.app
+
+> ⚠ If the first URL is not working due to server sleep or deployment issue, please try the second URL.
+
+---
+
+# 🔑 Demo Login Credentials
+
+## 👨‍💼 Admin Login
+
+| Field    | Value       |
+| -------- | ----------- |
+| Username | `admin`     |
+| Password | `Admin@123` |
+
+---
+
+## 🛍 Seller Login
+
+| Field    | Value        |
+| -------- | ------------ |
+| Username | `pradum`     |
+| Password | `Pradum@123` |
+
+---
+
+## 👤 Customer Login
+
+| Field    | Value          |
+| -------- | -------------- |
+| Username | `customer`     |
+| Password | `Customer@123` |
 
 ---
 
@@ -88,27 +133,33 @@ Main Database Tables:
 
 # 📌 Functionalities
 
-## Admin
+## 👨‍💼 Admin
 
 - Manage users and sellers
 - Manage books and categories
 - Manage inventory and orders
 - Monitor system activities
 
-## Seller
+---
+
+## 🛍 Seller
 
 - Add and manage books
 - Update inventory
 - Manage order status
 
-## Customer
+---
+
+## 👤 Customer
 
 - Browse books
 - Add books to cart
 - Place orders
 - Manage account
 
-## Guest User
+---
+
+## 🌐 Guest User
 
 - View books and categories
 

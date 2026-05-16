@@ -26,7 +26,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { FormProvider, useForm } from "react-hook-form";
 import TextFieldRFH from "@lib/TextFieldRFH";
 import { useRouter } from "next/navigation";
-import PageContainer from "@container/Pagecontainer";
+import PageContainer from "@container/PageContainer";
 import { useQuery } from "@tanstack/react-query";
 import { GetCartEP } from "@webEndPoints/handlers/cartWEB/cartWEB";
 import { CartItem } from "./CartPage";
@@ -1051,7 +1051,7 @@ export default function CheckoutPage() {
                   flexWrap: "wrap",
                 }}
               >
-                {MOCK_PAYMENT_MODES.filter((m) => m.is_active).map((mode) => {
+                {MOCK_PAYMENT_MODES?.filter((m) => m.is_active).map((mode) => {
                   const isSelected = selectedMode?.mode_code === mode.mode_code;
                   const meta = MODE_META[mode.mode_code];
                   return (

@@ -65,7 +65,7 @@ export default function FilterSidebar({
   const handleCategoryToggle = useCallback(
     (id: string) => {
       const updated = filters.categories.includes(id)
-        ? filters.categories.filter((c) => c !== id)
+        ? filters.categories?.filter((c) => c !== id)
         : [...filters.categories, id];
       onChange({ ...filters, categories: updated });
     },
@@ -75,7 +75,7 @@ export default function FilterSidebar({
   const handleAuthorToggle = useCallback(
     (name: string) => {
       const updated = filters.authors.includes(name)
-        ? filters.authors.filter((a) => a !== name)
+        ? filters.authors?.filter((a) => a !== name)
         : [...filters.authors, name];
       onChange({ ...filters, authors: updated });
     },

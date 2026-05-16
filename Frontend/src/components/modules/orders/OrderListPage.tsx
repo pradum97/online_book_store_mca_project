@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import { AgGridReact } from "ag-grid-react";
 import type { CellStyle, ColDef, ICellRendererParams } from "ag-grid-community";
-import PageContainer from "@container/Pagecontainer";
+import PageContainer from "@container/PageContainer";
 import { agGridTheme } from "@appearance/agGridThemes";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import CloseIcon from "@mui/icons-material/Close";
@@ -1085,7 +1085,7 @@ function OrderItemsModal({
                                   ? "Updating..."
                                   : "Update Status"}
                               </option>
-                              {ITEM_STATUS_OPTIONS.filter(
+                              {ITEM_STATUS_OPTIONS?.filter(
                                 (s) => s !== item.item_status,
                               ).map((s) => (
                                 <option key={s} value={s}>
@@ -1385,7 +1385,7 @@ export default function OrderListPage({ status }: OrderListPageProps) {
     let result = orders;
 
     if (watchStatus && watchStatus !== ORDER_STATUS.ALL) {
-      result = result.filter((o) => {
+      result = result?.filter((o) => {
         const s = o.order_status?.toUpperCase();
         switch (watchStatus) {
           case ORDER_STATUS.PENDING:
@@ -1405,7 +1405,7 @@ export default function OrderListPage({ status }: OrderListPageProps) {
     }
 
     if (watchPaymentStatus && watchPaymentStatus !== "ALL") {
-      result = result.filter(
+      result = result?.filter(
         (o) => o.payment_status?.toUpperCase() === watchPaymentStatus,
       );
     }

@@ -47,7 +47,7 @@ const ImageUploadModal = ({
 
   const addFiles = (files: FileList | null) => {
     if (!files) return;
-    const valid = Array.from(files).filter((f) => f.type.startsWith("image/"));
+    const valid = Array.from(files)?.filter((f) => f.type.startsWith("image/"));
     if (valid.length === 0) {
       toast.error("Only image files are allowed");
       return;
@@ -63,8 +63,8 @@ const ImageUploadModal = ({
   };
 
   const removeFile = (idx: number) => {
-    setSelectedFiles((prev) => prev.filter((_, i) => i !== idx));
-    setPreviews((prev) => prev.filter((_, i) => i !== idx));
+    setSelectedFiles((prev) => prev?.filter((_, i) => i !== idx));
+    setPreviews((prev) => prev?.filter((_, i) => i !== idx));
   };
 
   const handleUpload = async () => {

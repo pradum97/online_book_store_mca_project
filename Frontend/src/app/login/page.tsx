@@ -23,15 +23,20 @@ export const roleDefaultRoute: Record<string, string> = {
   ADMIN: "/admin/dashboard",
 };
 
-const defaultValues: IDefaultValue = {
-  email: "pradum",
-  password: "Pradum@123",
-};
+// const defaultValues: IDefaultValue = {
+//   email: "pradum",
+//   password: "Pradum@123",
+// };
 
 // const defaultValues: IDefaultValue = {
 //   email: "admin",
 //   password: "Admin@123",
 // };
+
+const defaultValues: IDefaultValue = {
+  email: "",
+  password: "",
+};
 
 export default function LoginPage() {
   const router = useRouter();

@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import { AgGridReact } from "ag-grid-react";
 import type { CellStyle, ColDef, ICellRendererParams } from "ag-grid-community";
-import PageContainer from "@container/Pagecontainer";
+import PageContainer from "@container/PageContainer";
 import { agGridTheme } from "@appearance/agGridThemes";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import AddIcon from "@mui/icons-material/Add";
@@ -390,7 +390,7 @@ const BookListPage = () => {
   );
 
   const filteredBooks = useMemo(() => {
-    return books.filter((b) => {
+    return books?.filter((b) => {
       const matchSearch = b.title
         ?.toLowerCase()
         .includes(searchText.toLowerCase());

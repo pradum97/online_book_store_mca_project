@@ -12,6 +12,7 @@ const withAnalyzer = withBundleAnalyzer({
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  //productionBrowserSourceMaps: true,
   typescript: {
     ignoreBuildErrors: true,
   },

@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import { AgGridReact } from "ag-grid-react";
 import type { CellStyle, ColDef, ICellRendererParams } from "ag-grid-community";
-import PageContainer from "@container/Pagecontainer";
+import PageContainer from "@container/PageContainer";
 import { agGridTheme } from "@appearance/agGridThemes";
 import Inventory2Icon from "@mui/icons-material/Inventory2";
 import AddIcon from "@mui/icons-material/Add";
@@ -861,15 +861,15 @@ export default function StockListPage({ type }: StockListPageProps) {
 
     switch (watchType) {
       case STOCK_TYPE.LOW:
-        data = data.filter((s) => s.quantity > 0 && s.quantity < 10);
+        data = data?.filter((s) => s.quantity > 0 && s.quantity < 10);
         break;
       case STOCK_TYPE.OUT:
-        data = data.filter((s) => s.quantity === 0);
+        data = data?.filter((s) => s.quantity === 0);
         break;
     }
 
     if (selectedBook?.book_id) {
-      data = data.filter((s) => s.book_id === selectedBook.book_id);
+      data = data?.filter((s) => s.book_id === selectedBook.book_id);
     }
 
     return data;

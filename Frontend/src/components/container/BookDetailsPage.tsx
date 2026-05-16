@@ -19,7 +19,7 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import BookCard from "./BookCard";
 import ButtonRFH from "@lib/ButtonRFH";
-import PageContainer from "@container/Pagecontainer";
+import PageContainer from "@container/PageContainer";
 import { useQuery } from "@tanstack/react-query";
 import { GetBookByIdEP } from "@webEndPoints/handlers/bookWEB/bookWEB";
 import { useParams, useRouter } from "next/navigation";

@@ -40,7 +40,7 @@ import MenuBookIcon from "@mui/icons-material/MenuBook";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import CloseIcon from "@mui/icons-material/Close";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import PageContainer from "@container/Pagecontainer";
+import PageContainer from "@container/PageContainer";
 import {
   GetMyOrdersWithItemsEP,
   GetOrderStatusHistoryEP,
@@ -256,8 +256,10 @@ const formatTime = (dateStr: string) =>
 // ─── Stats Bar ───────────────────────────────────────────────────────────────
 function OrderStatsBar({ orders }: { orders: Order[] }) {
   const total = orders.length;
-  const delivered = orders.filter((o) => o.order_status === "DELIVERED").length;
-  const active = orders.filter(
+  const delivered = orders?.filter(
+    (o) => o.order_status === "DELIVERED",
+  ).length;
+  const active = orders?.filter(
     (o) => !["DELIVERED", "CANCELLED"].includes(o.order_status),
   ).length;
   const totalSpent = orders.reduce((s, o) => s + parseFloat(o.total_amount), 0);
@@ -2187,7 +2189,7 @@ export default function MyOrdersPage() {
     },
   });
 
-  const filteredOrders = (orders ?? []).filter((order) => {
+  const filteredOrders = (orders ?? [])?.filter((order) => {
     if (filterStatus !== "ALL" && order.order_status !== filterStatus)
       return false;
     if (searchText.trim()) {

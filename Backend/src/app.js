@@ -20,6 +20,7 @@ const paymentRoutes = require("./modules/payments/payments.routes");
 const reviewsRoutes = require("./modules/reviews/reviews.routes");
 const receiptRoutes = require("./modules/receipt/receipt.routes");
 const adminRoutes = require("./modules/admin/dashboard/dashboard.routes");
+
 const app = express();
 app.use(express.json());
 app.use(
@@ -28,6 +29,9 @@ app.use(
       "http://localhost:3000",
       "https://6sllqcch-3000.inc1.devtunnels.ms",
       "https://6sllqcch-5055.inc1.devtunnels.ms",
+      "https://online-bookstore-frontend-psi.vercel.app",
+      "https://online-book-store.up.railway.app",
+      "https://mca-online-book-store-psi.vercel.app",
     ],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,

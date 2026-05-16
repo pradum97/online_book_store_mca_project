@@ -19,7 +19,7 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import LocalOfferOutlinedIcon from "@mui/icons-material/LocalOfferOutlined";
 import { useRouter } from "next/navigation";
-import PageContainer from "@container/Pagecontainer";
+import PageContainer from "@container/PageContainer";
 import {
   DeleteCartItemEP,
   GetCartEP,
@@ -185,7 +185,7 @@ export default function CartPage() {
       const prevData = queryClient.getQueryData(["GetCartEP"]);
 
       queryClient.setQueryData(["GetCartEP"], (old: any[]) => {
-        return old.filter((item) => item.cart_item_id !== cart_item_id);
+        return old?.filter((item) => item.cart_item_id !== cart_item_id);
       });
 
       return { prevData };

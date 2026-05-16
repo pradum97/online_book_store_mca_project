@@ -214,7 +214,7 @@ export default function SellerActionDialog({
                 businessType,
                 city && state ? `${city}, ${state}` : city || state,
               ]
-                .filter(Boolean)
+                ?.filter(Boolean)
                 .join(" · ")}
             </Typography>
           </Box>

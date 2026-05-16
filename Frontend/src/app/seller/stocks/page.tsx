@@ -2,7 +2,7 @@
 
 import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import StockListPage from "@modules/stock/Stocklistpage";
+import StockListPage from "@modules/stock/StockListPage";
 import { AllCommunityModule, ModuleRegistry } from "ag-grid-community";
 import { ISTOCK_TYPE } from "@container/navbar/RoleRenderer";
 

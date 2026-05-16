@@ -31,4 +31,4 @@ const MenuLoader: React.FC = () => {
   return null;
 };
 
-export default MenuLoader;
+//export default MenuLoader;
